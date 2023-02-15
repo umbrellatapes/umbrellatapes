@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <title>Umbrella Tapes: Contact</title>
+  <link rel="icon" href="Graphics/Logo.png">
+  <link rel="stylesheet" type="text/css" href="stylesheet1.css">
+  <style type="text/css">
+
+body {
+background-color:#CCC481;
+}
+
+h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/*below is nav menu stuff*/
+.menulist {
+  list-style-type: none;
+  margin: 0px;
+  margin-top: 0%;
+  padding: 0;
+  width: 120px;
+  background-color: #402E2A;
+  position: fixed;
+  top: 10px;
+  height: 110px;
+  overflow: hidden;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #407899;
+  color: rgb(255, 255, 255);
+}
+
+li a:hover:not(.active) {
+  background-color: #684551;
+  color: white;
+}
+
+
+
+
+
+/* below is logo pictures css stuff */
+.logoandlogohand {
+  position: relative;
+  top: 2px;
+  left: 130px;
+  width: 80%;
+  background-color: #CEA0AE;
+  z-index: 20;
+}
+
+.LogoTypeIcon {
+  position: absolute;
+  top: 10px;
+  left: 100px;
+}
+
+
+
+
+
+
+
+
+
+/* below is flexbox stuff*/
+.ContactContainer{
+  background-color: #407899;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 10px solid #CEA0AE;
+  position: relative;
+  left: 130px;
+  width: 79%;
+  height: 500px;
+  flex-wrap: wrap;
+  z-index: 10;
+}
+
+
+  </style>
+</head>
+
+
+
+
+
+
+
+<body>
+  <!-- Shift + cmd 7 på highligtede ting for at commente dem ud! .... på mac kun -->
+  <!-- clas="active" definerer hvilken side man er på atm-->
+  <ul class="menulist">
+    <li><a href="index.html"><img src="Graphics/HomeMenuIcon.png" style="width: 100px;"/></a></li>
+    <li><a class="active" href="contact.html"><img src="Graphics/ContactMenuIcon.png" style="width: 100px;"/></a></li>
+  </ul>
+
+  <!-- <a class="colorbox"></a> -->
+
+  
+  <div class="logoandlogohand" align="center">
+    <div class="LogoTypeIcon">
+      <img src="Graphics/LogoTypeIcon.png" style="width: 40%; align-self: left;">
+    </div> 
+    <br><br><br><br><br><br>
+  </div>
+
+  
+
+  <marquee style="color:white; font-size: xx-large; position:absolute;Left:10%;" scrolldelay="10" scrollamount="5" direction="up">Follow us on instagram! xD</marquee>
+  <br><br>
+
+  <div class="ContactContainer">
+    <a href="https://www.instagram.com/umbrella_tapes/"><img src="Graphics/instagram.png" style="height:300px;"></a>
+    <a href="https://umbrellatapes.bandcamp.com/" style="color: white; font-family: Arial, Helvetica, sans-serif; font-size: xx-large;">Bandcamp</a>
+    <a href="https://www.facebook.com/umbrellatapes" style="color: white; font-family: Arial, Helvetica, sans-serif; font-size: xx-large;">Facebook</a>
+    <!-- <a href="GameTest/Game.html" style="color: white; font-family: Arial, Helvetica, sans-serif; font-size: xx-large;">Game</a>
+    --><a style="color: white; font-family: Arial, Helvetica, sans-serif; font-size: xx-large;">umbrellatapes@gmail.com</a>
+  </div>
+
+  <br><br><br><br><br><br><br><br><br>
+
+  
+
+
+  
+
+
+
+</body>
+</html>
