@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <title>Umbrella Tapes: Home</title>
+  <link rel="icon" href="Graphics/Logo.png">
+  <!-- The line below imports the model viewer stuff, this must be here-->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="stylesheet1.css">
+  <style type="text/css">
+
+body {
+background-color:#CCC481;
+}
+
+h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/*below is nav menu stuff*/
+.menulist {
+  list-style-type: none;
+  margin: 0px;
+  margin-top: 0%;
+  padding: 0;
+  width: 120px;
+  background-color: #402E2A;
+  position: fixed;
+  top: 10px;
+  height: 110px;
+  overflow: hidden;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #407899;
+  color: rgb(255, 255, 255);
+}
+
+li a:hover:not(.active) {
+  background-color: #684551;
+  color: white;
+}
+
+
+
+
+
+/* below is logo pictures css stuff */
+.logoandlogohand {
+  position: relative;
+  top: 2px;
+  left: 130px;
+  width: 80%;
+  background-color: #CEA0AE;
+}
+
+.LogoTypeIcon {
+  position: absolute;
+  top: 10px;
+  left: 100px;
+}
+
+.Logo {
+  position: absolute;
+  top: 50px;
+  left: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+/* below is flexbox stuff*/
+.container{
+  background-color: #CEA0AE;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 10px solid #CEA0AE;
+  height: 500px;
+  width: 80%;
+  position: relative;
+  left: 130px;
+}
+
+.item1{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  height: 500px;
+}
+
+.item2{
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 500px;
+}
+
+
+
+
+
+.model-viewer {
+  background-color: #CCC481;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+
+  </style>
+</head>
+
+
+
+
+
+
+
+<body>
+  <!-- Shift + cmd 7 på highligtede ting for at commente dem ud! .... på mac kun -->
+  <!-- clas="active" definerer hvilken side man er på atm-->
+  <ul class="menulist">
+    <li><a class="active" href="index.html"><img src="Graphics/HomeMenuIcon.png" style="width: 100px;"/></a></li>
+    <li><a href="contact.html"><img src="Graphics/ContactMenuIcon.png" style="width: 100px;"/></a></li>
+  </ul>
+
+  <!-- <a class="colorbox"></a> -->
+
+  
+  <div class="logoandlogohand" align="center">
+    <div class="LogoTypeIcon">
+      <img src="Graphics/LogoTypeIcon.png" style="width: 80%; align-self: left;">
+    </div> 
+    <div class="Logo">
+      <img src="Graphics/Logo.png" style="width: 100%; left: 5%;">
+    </div>
+    <br><br><br><br><br><br>
+  </div>
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+<!--CONTENT BELOW ---------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!--CONTENT BELOW ---------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!--CONTENT BELOW ---------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- TEMPLATE FOR CONTENT: To change order of items (embedded music player and 3d model) place the div that goes on the left side first in code-->   
+<!-- Bandcamp and other embedded things should be no wider than 300px, to fit mobile viewport-->
+<!-- add the id tag 'glow' to the iframe in order to make it glow according to 'glow' animation in CSS-->
+
+
+
+
+<!-- Tape1 LEFT-->
+<div class="container">
+  <div class="item1">
+    <img src="Graphics/ComingSoon.jpg" style="width: 300px; height: 300px;">
+    <p style="color: white; font-size: medium; text-align: center;">Tape1 by Needles - March 2023</p>
+  </div>
+  <div class="item2">
+    <div class="model-viewer" style="overflow-x: hidden;">
+      <model-viewer disable-tap camera-controls auto-rotate disable-zoom touch-action="pan-y" src="3Dmodels/Tape1.glb" ar ios-src="3Dmodels/Tape1.usdz" alt="3D model of Tape1 cassette" style="background-color: unset; width:100%; height:100%;"></model-viewer>
+    </div>
+  </div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!-- Fed Stil Flotte Krøller RIGHT-->
+<div class="container">
+  <div class="item2">
+    <div class="model-viewer" style="overflow-x: hidden;">
+      <model-viewer disable-tap camera-controls auto-rotate disable-zoom touch-action="pan-y" src="3Dmodels/FedStilFlotteKrøller.glb" ar ios-src="3Dmodels/RoomsTape.usdz" alt="3D model of Fed Stil Flotte Krøller cassette" style="background-color: unset; width:100%; height:100%;"></model-viewer>
+    </div>
+  </div>
+  <div class="item1">
+    <iframe id="glow" style="border: 0; width: 300px; height: 300px;" src="https://bandcamp.com/EmbeddedPlayer/album=3516848554/size=large/bgcol=ffffff/linkcol=f171a2/minimal=true/transparent=true/" seamless><a href="https://bastianb.bandcamp.com/album/fed-stil-flotte-kr-ller">Fed Stil Flotte Krøller by Bastian</a></iframe>
+    <p style="color: white; font-size: medium; text-align: center;">Fed Stil Flotte Krøller by Bastian - December 2018</p>
+  </div>
+</div>
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!-- Rooms LEFT-->
+<div class="container">
+  <div class="item1">
+    <iframe id="glow" style="border: 0; width: 300px; height: 300px;" src="https://bandcamp.com/EmbeddedPlayer/album=4202013616/size=large/bgcol=ffffff/linkcol=e99708/minimal=true/transparent=true/" seamless><a href="https://campingplads.bandcamp.com/album/rooms-2">Rooms by Needles</a></iframe>
+    <p style="color: white; font-size: medium; text-align: center;">Rooms by Needles - July 2021</p>
+  </div>
+  <div class="item2">
+    <div class="model-viewer" style="overflow-x: hidden;">
+      <model-viewer disable-tap camera-controls auto-rotate disable-zoom touch-action="pan-y" src="3Dmodels/RoomsTape2.glb" ar ios-src="3Dmodels/RoomsTape2.usdz" alt="3D model of Rooms cassette" style="background-color: unset; width:100%; height:100%;"></model-viewer>
+    </div>
+  </div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+<!-- Next up content: uncomment below ------------------------------------------------------------------------- -->
+  
+<!-- && album RIGHT-->
+<!-- 
+<div class="container">
+  <div class="item2">
+    <div class="model-viewer" style="overflow-x: hidden;">
+      <model-viewer disable-tap camera-controls auto-rotate disable-zoom touch-action="pan-y" src="3Dmodels/RoomsTape.glb" ar ios-src="3Dmodels/RoomsTape.usdz" alt="A 3D transparency test" style="background-color: unset; width:100%; height:100%;"></model-viewer>
+    </div>
+  </div>
+  <div class="item1">
+    <iframe id="glow" style="border: 0; width: 300px; height: 300px;" src="https://bandcamp.com/EmbeddedPlayer/album=1472050900/size=large/bgcol=ffffff/linkcol=f171a2/minimal=true/transparent=true/" seamless><a href="https://campingplads.bandcamp.com/album/-">&amp;&amp; by Frederik Bjørn &amp; Casper Taro</a></iframe>
+    <p style="color: white; font-size: medium; text-align: center;">Needles soundtrack for video game 'Plant Game' - May 2022</p>
+  </div>
+</div>
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+-->
+
+
+
+
+  
+
+
+
+</body>
+</html>
